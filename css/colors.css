@@ -2,3 +2,8 @@
 p {
   color: red;
 }
+
+/* line 5, ../scss/colors.scss */
+h1 {
+  color: blue;
+}

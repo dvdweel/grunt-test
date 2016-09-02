@@ -14,6 +14,17 @@ module.exports = function(grunt) {
                 dest: 'js/build/total.js',
             }
         },
+        cssmin: {
+          options: {
+            shorthandCompacting: false,
+            roundingPrecision: -1
+          },
+          target: {
+            files: {
+              'css/total/total.css': ['css/*.css']
+            }
+          }
+        },
         // Minimalize total.js - maakt total.min.js aan
         uglify: {
             build: {
@@ -52,10 +63,11 @@ module.exports = function(grunt) {
     // 3. Where we tell Grunt we plan to use this plug-in.
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat','uglify','compass','watch']);
+    grunt.registerTask('default', ['concat','cssmin','uglify','compass','watch']);
 
 };
