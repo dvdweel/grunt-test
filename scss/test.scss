@@ -1,0 +1,28 @@
+.sulu-breadcrumb {
+  $colorTransitionDuration: 80ms;
+  padding-bottom: 5px;
+
+  .breadcrumb {
+    cursor: pointer;
+    font-size: small;
+    color: grey;
+
+
+    &:hover, &:hover .icon {
+      color: black;
+    }
+  }
+
+  .icon {
+    color: gray;
+    font-size: 9px;
+    margin-right: 5px;
+  }
+
+  .separator {
+    display: inline-block;
+    margin: 0 10px 0 5px;
+    font-size: 9px;
+    color: black;
+  }
+}
