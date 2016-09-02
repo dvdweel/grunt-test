@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 options: {
                     sourcemap: false,
                     sassDir: 'scss/',
-                    specify: ['scss/test.scss'],
+                    specify: ['scss/*.scss'],
                     cssDir: 'css/',
                     relativeAssets: false
                 }
