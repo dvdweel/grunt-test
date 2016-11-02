@@ -3,35 +3,7 @@ module.exports = function(grunt) {
     // 1. All configuration goes here 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
-        // Voegt alle files die in js map zitten bij elkaar in main.js
-        concat: {
-            dist: {
-                src: [
-                    'js/libs/*.js', // All JS in the libs folder
-                    'js/main.js'  // This specific file
-                ],
-                dest: 'js/build/total.js',
-            }
-        },
-        cssmin: {
-          options: {
-            shorthandCompacting: false,
-            roundingPrecision: -1
-          },
-          target: {
-            files: {
-              'css/total/total.css': ['css/*.css']
-            }
-          }
-        },
         // Minimalize total.js - maakt total.min.js aan
-        uglify: {
-            build: {
-                src: 'js/build/total.js',
-                dest: 'js/build/total.min.js'
-            }
-        },
         compass: {
             dev: {
                 options: {
@@ -68,6 +40,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat','cssmin','uglify','compass','watch']);
+    grunt.registerTask('default', ['compass','watch']);
 
 };

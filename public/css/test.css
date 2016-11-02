@@ -1,0 +1,33 @@
+/* line 4, ../scss/test.scss */
+body {
+  background: #ccc;
+}
+
+/* line 9, ../scss/test.scss */
+p {
+  color: #ccc;
+}
+
+/* line 18, ../scss/test.scss */
+body {
+  font-size: 62.5%;
+}
+
+/* line 27, ../scss/test.scss */
+.container {
+  width: 100%;
+}
+
+/* line 31, ../scss/test.scss */
+.col-4 {
+  width: 25%;
+}
+
+/* line 35, ../scss/test.scss */
+.container {
+  width: 100%;
+}
+/* line 37, ../scss/test.scss */
+.container h1 {
+  color: red;
+}

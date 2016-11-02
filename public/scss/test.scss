@@ -1,0 +1,43 @@
+// colors
+$primaryColor: #eeffcc;
+
+body {
+  $primaryColor: #ccc !global;
+  background: $primaryColor;
+}
+
+p {
+  color: $primaryColor;
+}
+
+// fontsize
+$firstValue: 62.5%;
+
+$firstValue: 24px !default;
+
+body{
+  font-size: $firstValue;
+}
+
+// body font size: 62,5%
+
+$fontDiff: (14px/16px);
+$container-width: 100%;
+
+.container {
+  width: $container-width;
+}
+
+.col-4 {
+  width: $container-width / 4;
+}
+
+.container {
+  width: 100%;
+  h1 {
+    color: red;
+  }
+}
+
+
+
