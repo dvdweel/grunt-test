@@ -1,0 +1,5 @@
+/vendor/
+/.sass-cache/
+
+# IDEs
+.idea/*
